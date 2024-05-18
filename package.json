@@ -15,9 +15,9 @@
 	},
 	"scripts": {
 		"prepare": "husky",
-		"build": "dotenv -e .env.production -- tsc && vite build",
+		"build": "dotenv -e .env -- tsc && vite build",
 		"start": "dotenv -e .env.development -- vite",
-		"start:prod": "dotenv -e .env.production -- vite preview",
+		"start:prod": "dotenv -e .env -- vite preview",
 		"test": "dotenv -e .env.development -- vitest",
 		"test:debug": "dotenv -e .env.development -- vitest --inspect-brk --inspect --logHeapUsage --threads=false",
 		"test:mutate": "dotenv -e .env.development -- stryker run",
