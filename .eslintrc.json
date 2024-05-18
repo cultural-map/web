@@ -106,7 +106,7 @@
 					},
 					{
 						"group": "external",
-						"pattern": "^@?(react-|vite-|apollo|graphql|i18next|lottie|axe|zod|hookform|zustand).*(/.*|$)"
+						"pattern": "^@?(react-|vite-|apollo|graphql|i18next|lottie|axe|zod|hookform|zustand|tailwindcss).*(/.*|$)"
 					},
 					{
 						"group": "sibling",
