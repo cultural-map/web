@@ -1,0 +1,30 @@
+{
+	"$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+	"testRunner": "vitest",
+	"packageManager": "yarn",
+	"checkers": ["typescript"],
+	"allowConsoleColors": true,
+	"buildCommand": "yarn build",
+	"coverageAnalysis": "perTest",
+	"tempDirName": ".reports/stryker-tmp",
+	"reporters": ["html", "clear-text", "progress"],
+	"eventReporter": {
+		"baseDir": ".reports/stryker/events"
+	},
+	"htmlReporter": {
+		"fileName": ".reports/stryker/mutation.html"
+	},
+	"vitest": {
+		"dir": "./src",
+		"configFile": "./vitest.config.ts"
+	},
+	"mutate": [
+		"./src/**",
+		"!**/*.css",
+		"!**/main.tsx",
+		"!**/assets/**",
+		"!**/configs/**",
+		"!**/translations/**",
+		"!**/{__tests__,__fixtures__}/**"
+	]
+}
