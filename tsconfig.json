@@ -1,0 +1,38 @@
+{
+	"include": ["src"],
+	"references": [{ "path": "./tsconfig.node.json" }],
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"useDefineForClassFields": true,
+		"lib": ["ES2023", "DOM", "DOM.Iterable"],
+
+		/* Bundler mode */
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* Path alises */
+		"paths": {
+			"_assets/*": ["./src/assets/*"],
+			"_components/*": ["./src/components/*"],
+			"_configs/*": ["./src/configs/*"],
+			"_contexts/*": ["./src/contexts/*"],
+			"_pages/*": ["./src/pages/*"],
+			"_router/*": ["./src/router/*"],
+			"_styles/*": ["./src/styles/*"],
+			"_translations/*": ["./src/translations/*"],
+			"_types/*": ["./src/types/*"]
+		}
+	}
+}
