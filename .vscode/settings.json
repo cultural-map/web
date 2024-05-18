@@ -1,0 +1,121 @@
+{
+	// Workbench
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.editor.tabSizing": "shrink",
+
+	// GIT
+	"git.enabled": true,
+	"git.autofetch": true,
+	"git.detectSubmodules": false,
+	"git.enableSmartCommit": true,
+	"git.ignoreLimitWarning": true,
+
+	// Terminal
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+
+	// JSON
+	"json.format.enable": true,
+
+	// Typescript
+	"typescript.format.enable": true,
+	"typescript.validate.enable": true,
+	"typescript.suggest.autoImports": true,
+	"typescript.suggestionActions.enabled": true,
+	"typescript.preferences.quoteStyle": "single",
+	"typescript.suggest.completeFunctionCalls": true,
+	"typescript.format.insertSpaceAfterConstructor": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.format.insertSpaceAfterCommaDelimiter": true,
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+	"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+	"typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+	"typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+
+	// Files
+	"files.eol": "\n",
+	"files.autoSave": "off",
+	"files.encoding": "utf8",
+	"files.trimFinalNewlines": true,
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"**/.git": true
+	},
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/bower_components/*/**": true,
+		"**/node_modules/*/**": true
+	},
+
+	// Editor
+	"editor.tabSize": 4,
+	"editor.fontSize": 15,
+	"editor.useTabStops": true,
+	"editor.autoIndent": "full",
+	"editor.insertSpaces": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": false,
+	"editor.formatOnPaste": false,
+	"editor.matchBrackets": "always",
+	"editor.detectIndentation": true,
+	"editor.wrappingIndent": "indent",
+	"editor.trimAutoWhitespace": true,
+	"editor.parameterHints.cycle": true,
+	"editor.accessibilitySupport": "off",
+	"editor.parameterHints.enabled": true,
+	"editor.renderWhitespace": "boundary",
+	"editor.snippetSuggestions": "inline",
+	"editor.autoClosingBrackets": "always",
+	"editor.suggestOnTriggerCharacters": true,
+	"editor.wordBasedSuggestions": "matchingDocuments",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "never",
+		"source.fixAll.format": "explicit",
+		"source.fixAll.eslint": "explicit"
+	},
+
+	// Misc.
+	"search.useIgnoreFiles": true,
+	"explorer.confirmDelete": false,
+	"search.exclude": {
+		"**/node_modules/**/*": true
+	},
+
+	// cSpell
+	"cSpell.language": "en,pt,pt-BR",
+	"cSpell.words": [
+		"apollographql",
+		"brazilian",
+		"commitlint",
+		"conventionalcommits",
+		"csrf",
+		"fastify",
+		"gstatic",
+		"hookform",
+		"jsdelivr",
+		"linebreak",
+		"lottie",
+		"nestjs",
+		"nextui",
+		"signin",
+		"Signin",
+		"signup",
+		"Signup",
+		"stryker",
+		"tailwindcss",
+		"unplugin",
+		"zustand"
+	],
+
+	// Vitest
+	"vitest.watchOnStartup": false
+}
