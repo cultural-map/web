@@ -1,0 +1,7 @@
+# config/reports
+.husky
+.reports
+
+# build/packages
+dist
+node_modules
