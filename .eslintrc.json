@@ -1,0 +1,127 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"env": {
+		"node": true,
+		"es2020": true,
+		"browser": true
+	},
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": "latest",
+		"project": "tsconfig.json"
+	},
+	"plugins": [
+		"@stylistic/js",
+		"@typescript-eslint/eslint-plugin",
+
+		"react",
+		"react-refresh",
+
+		"jsx-a11y",
+		"testing-library",
+
+		"import",
+		"prettier"
+	],
+	"extends": [
+		"eslint:recommended",
+
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:import/recommended",
+
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+
+		"plugin:jsx-a11y/recommended",
+		"plugin:prettier/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx", ".json"]
+		},
+		"import/resolver": {
+			"typescript": {
+				"project": "./",
+				"alwaysTryTypes": true
+			}
+		}
+	},
+	"rules": {
+		"@stylistic/js/semi": ["error", "always"],
+		"@stylistic/js/linebreak-style": ["error", "unix"],
+		"@stylistic/js/indent": ["error", "tab", { "ignoredNodes": ["PropertyDefinition"] }],
+
+		"react/display-name": "off",
+		"react/react-in-jsx-scope": "off",
+		"@typescript-eslint/no-unused-vars": "error",
+
+		"react-refresh/only-export-components": ["warn", { "allowConstantExport": true }],
+
+		"import/no-self-import": "error",
+		"import/no-default-export": "off",
+		"import/no-unused-modules": "error",
+		"import/no-unassigned-import": "off",
+		"import/no-empty-named-blocks": "error",
+		"import/no-useless-path-segments": "error",
+		"import/no-anonymous-default-export": "error",
+		"import/no-relative-parent-imports": [
+			"error",
+			{
+				"ignore": [
+					"_assets/",
+					"_components/",
+					"_configs/",
+					"_contexts/",
+					"_pages/",
+					"_router/",
+					"_styles/",
+					"_translations/",
+					"_types/"
+				]
+			}
+		],
+		"import/order": [
+			"error",
+			{
+				"newlines-between": "always",
+				"groups": ["index", "builtin", "external", "sibling", "parent", "internal"],
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				},
+				"pathGroups": [
+					{
+						"group": "index",
+						"pattern": "^@?(node).*(:*|$)"
+					},
+					{
+						"group": "builtin",
+						"pattern": "^@?(react|vite|vitest|nextui-org)[\\w\\d]*(/.*|$)"
+					},
+					{
+						"group": "external",
+						"pattern": "^@?(react-|vite-|apollo|graphql|i18next|lottie|axe|zod|hookform|zustand).*(/.*|$)"
+					},
+					{
+						"group": "sibling",
+						"pattern": "^@?(cultural-map).*(/.*|$)"
+					},
+					{
+						"group": "parent",
+						"pattern": "^_(assets|components|configs|contexts|pages|router|styles|translations|types)(/.*|$)"
+					},
+					{
+						"group": "internal",
+						"pattern": "^(.{1,2}/?)+(/.*|$)"
+					}
+				]
+			}
+		]
+	}
+}

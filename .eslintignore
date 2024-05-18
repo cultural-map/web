@@ -1,0 +1,11 @@
+# config/reports
+.next
+.husky
+.reports
+
+vite.config.ts
+vitest.config.ts
+
+# build/packages
+dist
+node_modules
