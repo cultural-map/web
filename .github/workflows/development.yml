@@ -1,0 +1,51 @@
+name: Developer
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  health-check:
+    name: Health check
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version:
+          - 21
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          always-auth: true
+          scope: "@cultural-map"
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://npm.pkg.github.com/
+
+      - name: Create .env file
+        uses: DeveloperRic/action-create-env@v1.0.4
+        with:
+          full_text: |
+            NODE_ENV=development
+        env:
+          API_URL: ${{ secrets.DEV_API_URL }}
+
+      - name: Override "prepare" script
+        run: npm pkg delete scripts.prepare
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Check lint
+        run: yarn lint:check
+
+      - name: Check types
+        run: yarn type:check
+
+      - name: Run build
+        run: yarn build
