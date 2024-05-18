@@ -22,8 +22,7 @@ yarn lint:check || (
     echo -e "${COLORS[red]}Check the console and run ${COLORS[green]}'yarn lint:fix'${COLORS[default]} ${COLORS[red]}to try again!${COLORS[default]}";
 
     false;
-)1
-
+)
 
 echo -e "\n${COLORS[green]}Congratulations! Your code looks great! 🎉${COLORS[default]}";
 echo -e "${COLORS[green]}I'm pushing now! 🚚\n${COLORS[default]}";
