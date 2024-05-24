@@ -1,0 +1,18 @@
+{
+	"available_theme": {
+		"dark": "Dark",
+		"light": "Light"
+	},
+	"toggle_theme_button": {
+		"aria_label": {
+			"button": "Change the current color schema",
+			"icon": {
+				"dark": "Dark color scheme",
+				"light": "Light color scheme"
+			}
+		},
+		"toast": {
+			"title": "You changed the color schema to '{{theme}}'"
+		}
+	}
+}

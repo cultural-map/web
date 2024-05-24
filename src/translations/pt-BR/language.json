@@ -1,0 +1,11 @@
+{
+	"language_dropdown": {
+		"aria_label": {
+			"dropdown_menu": "Linguagens disponíveis"
+		},
+		"label": "Selecione a linguagem",
+		"toast": {
+			"title": "Você alterou a linguagem do sistema para '{{language}}'"
+		}
+	}
+}

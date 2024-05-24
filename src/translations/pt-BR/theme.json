@@ -1,0 +1,18 @@
+{
+	"available_theme": {
+		"dark": "Escuro",
+		"light": "Claro"
+	},
+	"toggle_theme_button": {
+		"aria_label": {
+			"button": "Altere o esquema de cores atual",
+			"icon": {
+				"dark": "Esquema de cores claro",
+				"light": "Esquema de cores escuro"
+			}
+		},
+		"toast": {
+			"title": "Você alterou o esquema de cores do para '{{theme}}'"
+		}
+	}
+}

@@ -2,7 +2,7 @@ import { GLOBALIZATION_PROPERTIES, Language } from "@cultural-map/locations";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import { languages } from "_translations/languages";
+import { translations } from "_translations/index";
 
 i18next.use(initReactI18next).init({
 	lng: GLOBALIZATION_PROPERTIES.defaultLanguage,
@@ -12,8 +12,8 @@ i18next.use(initReactI18next).init({
 		default: [GLOBALIZATION_PROPERTIES.defaultLanguage],
 	},
 	resources: {
-		[Language.enUS]: languages.enUS,
-		[Language.ptBR]: languages.ptBR,
+		[Language.enUS]: translations.enUS,
+		[Language.ptBR]: translations.ptBR,
 	},
 });
 
