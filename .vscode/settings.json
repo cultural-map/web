@@ -92,30 +92,5 @@
 
 	// cSpell
 	"cSpell.language": "en,pt,pt-BR",
-	"cSpell.words": [
-		"apollographql",
-		"brazilian",
-		"commitlint",
-		"conventionalcommits",
-		"csrf",
-		"fastify",
-		"gstatic",
-		"hookform",
-		"jsdelivr",
-		"linebreak",
-		"lottie",
-		"nestjs",
-		"nextui",
-		"signin",
-		"Signin",
-		"signup",
-		"Signup",
-		"stryker",
-		"tailwindcss",
-		"unplugin",
-		"zustand"
-	],
-
-	// Vitest
-	"vitest.watchOnStartup": false
+	"cSpell.words": ["chakra", "heroicons", "linebreak", "lottie", "nextui", "zustand"]
 }
