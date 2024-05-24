@@ -47,8 +47,8 @@
 		},
 		"import/resolver": {
 			"typescript": {
-				"project": "./",
-				"alwaysTryTypes": true
+				"alwaysTryTypes": true,
+				"project": "./tsconfig.json"
 			}
 		}
 	},
@@ -86,41 +86,16 @@
 				]
 			}
 		],
+
 		"import/order": [
 			"error",
 			{
 				"newlines-between": "always",
-				"groups": ["index", "builtin", "external", "sibling", "parent", "internal"],
+				"groups": ["builtin", "external", "internal", ["sibling", "parent"], "index", "unknown"],
 				"alphabetize": {
 					"order": "asc",
 					"caseInsensitive": true
-				},
-				"pathGroups": [
-					{
-						"group": "index",
-						"pattern": "^@?(node).*(:*|$)"
-					},
-					{
-						"group": "builtin",
-						"pattern": "^@?(react|vite|vitest|nextui-org)[\\w\\d]*(/.*|$)"
-					},
-					{
-						"group": "external",
-						"pattern": "^@?(react-|vite-|apollo|graphql|i18next|lottie|axe|zod|hookform|zustand|tailwindcss).*(/.*|$)"
-					},
-					{
-						"group": "sibling",
-						"pattern": "^@?(cultural-map).*(/.*|$)"
-					},
-					{
-						"group": "parent",
-						"pattern": "^_(assets|components|configs|contexts|pages|router|styles|translations|types)(/.*|$)"
-					},
-					{
-						"group": "internal",
-						"pattern": "^(.{1,2}/?)+(/.*|$)"
-					}
-				]
+				}
 			}
 		]
 	}
