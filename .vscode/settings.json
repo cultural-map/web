@@ -92,5 +92,16 @@
 
 	// cSpell
 	"cSpell.language": "en,pt,pt-BR",
-	"cSpell.words": ["chakra", "heroicons", "linebreak", "lottie", "nextui", "zustand"]
+	"cSpell.words": [
+		"chakra",
+		"commitlint",
+		"heroicons",
+		"linebreak",
+		"lottie",
+		"nextui",
+		"stryker",
+		"tailwindcss",
+		"webpackchunkname",
+		"zustand"
+	]
 }

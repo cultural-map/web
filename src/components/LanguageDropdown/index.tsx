@@ -43,7 +43,7 @@ export const LanguageDropdown = (): ReactElement => {
 		<Dropdown>
 			<DropdownTrigger>
 				<Button
-					variant="bordered"
+					variant="faded"
 					endContent={<ChevronDownIcon className="size-4" />}
 					aria-label={t("language.language_dropdown.aria_label.dropdown_menu")}
 				>

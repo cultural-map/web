@@ -1,31 +1,35 @@
-import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { Button } from "@nextui-org/react";
 import { useTheme } from "next-themes";
-import { ReactElement } from "react";
+import { ReactElement, useCallback, useMemo } from "react";
 import { toast } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 
-import { AvailableThemes } from "_styles/themes/available-themes";
+import { AvailableThemes, DEFAULT_THEME } from "_styles/themes";
+
+import { THEME_INFO } from "./constants/theme-info";
 
 export const ThemeToggle = (): ReactElement => {
 	const { t } = useTranslation();
-	const { theme, setTheme, systemTheme } = useTheme();
+	const { setTheme, theme = DEFAULT_THEME, systemTheme = DEFAULT_THEME } = useTheme();
 
 	const currentTheme = theme === AvailableThemes.SYSTEM ? systemTheme : theme;
-	const isLightTheme = currentTheme === AvailableThemes.LIGHT;
+	const { translationKeys, icon: ThemeIcon } = useMemo(() => THEME_INFO[currentTheme], [currentTheme]);
 
-	const handleToggleTheme = () => {
-		setTheme(isLightTheme ? AvailableThemes.DARK : AvailableThemes.LIGHT);
+	const handleToggleTheme = useCallback(() => {
+		const newTheme = currentTheme === AvailableThemes.LIGHT ? AvailableThemes.DARK : AvailableThemes.LIGHT;
+		const { translationKeys, icon: ThemeIcon } = THEME_INFO[newTheme];
+
+		setTheme(newTheme);
 
 		toast(
 			t("theme.toggle_theme_button.toast.title", {
-				theme: isLightTheme ? t("theme.available_theme.dark") : t("theme.available_theme.light"),
+				theme: t(translationKeys.name),
 			}),
 			{
-				icon: isLightTheme ? <MoonIcon className="size-6" /> : <SunIcon className="size-6" />,
+				icon: <ThemeIcon className="size-6" />,
 			},
 		);
-	};
+	}, [t, currentTheme, setTheme]);
 
 	return (
 		<Button
@@ -35,11 +39,7 @@ export const ThemeToggle = (): ReactElement => {
 			onClick={handleToggleTheme}
 			aria-label={t("theme.available_theme.aria_label")}
 		>
-			{isLightTheme ? (
-				<SunIcon className="size-4" aria-label={t("theme.available_theme.icon.light")} />
-			) : (
-				<MoonIcon className="size-4" aria-label={t("theme.available_theme.icon.dark")} />
-			)}
+			{<ThemeIcon className="size-4" aria-label={t(translationKeys.ariaLabel)} />}
 		</Button>
 	);
 };
