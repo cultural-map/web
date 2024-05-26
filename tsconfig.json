@@ -26,7 +26,7 @@
 		"paths": {
 			"_assets/*": ["./src/assets/*"],
 			"_components/*": ["./src/components/*"],
-			"_configs/*": ["./src/configs/*"],
+			"_configurations/*": ["./src/configurations/*"],
 			"_contexts/*": ["./src/contexts/*"],
 			"_pages/*": ["./src/pages/*"],
 			"_router/*": ["./src/router/*"],

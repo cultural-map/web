@@ -76,7 +76,7 @@
 				"ignore": [
 					"_assets/",
 					"_components/",
-					"_configs/",
+					"_configurations/",
 					"_contexts/",
 					"_pages/",
 					"_router/",

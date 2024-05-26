@@ -14,7 +14,7 @@ export default defineConfig({
 		include: ["**/*.test.{ts,tsx}", "**/*.test.e2e.{ts,tsx}"],
 		coverage: {
 			provider: "istanbul",
-			reportsDirectory: "./.reports/istanbul",
+			reportsDirectory: ".reports/istanbul",
 			exclude: ["**/__tests__/**", "**/__fixtures__/**"],
 		},
 	},

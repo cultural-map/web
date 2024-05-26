@@ -7,9 +7,9 @@ import { Toaster } from "react-hot-toast";
 import { I18nextProvider } from "react-i18next";
 import { BrowserRouter } from "react-router-dom";
 
-import { apolloClient } from "_configs/apollo/client";
-import { axeCoreAccessibilityReport } from "_configs/axe-core/axeCoreAccessibilityReport";
-import { i18next } from "_configs/i18n";
+import { apolloClient } from "_configurations/apollo/client";
+import { axeCoreAccessibilityReport } from "_configurations/axe-core/axeCoreAccessibilityReport";
+import { i18next } from "_configurations/i18n";
 
 import { Router } from "./router";
 
