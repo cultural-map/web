@@ -1,25 +1,31 @@
 {
-	"version": "0.0.1",
+	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "node",
+			"name": "Debug Chrome Browser",
+			"type": "chrome",
 			"request": "launch",
-			"name": "Debug Local",
-			"runtimeExecutable": "yarn",
-			"runtimeArgs": ["start", "--", "--inspect-brk"],
-			"console": "integratedTerminal",
-			"restart": true,
-			"autoAttachChildProcesses": true
+			"url": "http://localhost:5173",
+			"webRoot": "${workspaceFolder}"
 		},
 		{
-			"type": "node",
+			"name": "Debug Edge Browser",
+			"type": "msedge",
 			"request": "launch",
-			"name": "Debug Test",
+			"url": "http://localhost:5173",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"name": "Debug Current Test File",
+			"type": "node",
+			"smartStep": true,
+			"request": "launch",
 			"runtimeExecutable": "yarn",
-			"runtimeArgs": ["test", "--", "--inspect-brk"],
 			"console": "integratedTerminal",
-			"restart": true,
-			"autoAttachChildProcesses": true
+			"autoAttachChildProcesses": true,
+			"args": ["run", "${relativeFile}"],
+			"skipFiles": ["<node_internals>/**", "**/node_modules/**"],
+			"program": "${workspaceRoot}/node_modules/vitest/vitest.mts"
 		}
 	]
 }
