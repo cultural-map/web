@@ -1,0 +1,26 @@
+{
+	"title": "Mapa Cultural - Entrar",
+	"form": {
+		"sign_in": {
+			"field": {
+				"email": {
+					"label": "E-mail",
+					"placeholder": "Entre com o seu e-mail"
+				},
+				"password": {
+					"label": "Senha",
+					"placeholder": "Entre com a sua senha"
+				}
+			},
+			"action": {
+				"forgot_password": "Esqueceu a sua senha?",
+				"submit": "Entrar"
+			}
+		}
+	},
+	"sso": {
+		"google": "Entre usando o Google",
+		"meta": "Entre usando o Meta",
+		"or": "ou"
+	}
+}

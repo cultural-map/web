@@ -10,7 +10,7 @@ export default defineConfig({
 		globals: true,
 		environment: "jsdom",
 		exclude: ["node_modules/**", "dist/**"],
-		setupFiles: "./src/configs/vitest/setup.ts",
+		setupFiles: "./src/configurations/vitest/setup.ts",
 		include: ["**/*.test.{ts,tsx}", "**/*.test.e2e.{ts,tsx}"],
 		coverage: {
 			provider: "istanbul",

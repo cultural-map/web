@@ -20,16 +20,17 @@ export const LanguageDropdown = (): ReactElement => {
 	);
 
 	const onSelectLanguage = useCallback(
-		(selectedLanguage: Selection) => {
-			const selections = Array.from(selectedLanguage);
-			const newLanguage = selections[0].toString();
+		(selectedOption: Selection) => {
+			const selections = Array.from(selectedOption);
+			const selectedLanguage = selections[0].toString();
 
-			changeLanguage(newLanguage);
-			setSelectedKeys(new Set([newLanguage]));
+			changeLanguage(selectedLanguage);
+
+			setSelectedKeys(new Set([selectedLanguage]));
 
 			toast(
 				t("language.language_dropdown.toast.title", {
-					language: newLanguage,
+					language: selectedLanguage,
 				}),
 				{
 					icon: <LanguageIcon className="size-6" />,

@@ -1,0 +1,26 @@
+{
+	"title": "Cultural Map - Iniciar sesión",
+	"form": {
+		"sign_in": {
+			"field": {
+				"email": {
+					"label": "Correo electrónico",
+					"placeholder": "Introduce tu correo electrónico"
+				},
+				"password": {
+					"label": "Contraseña",
+					"placeholder": "Introduce tu contraseña"
+				}
+			},
+			"action": {
+				"forgot_password": "¿Olvidaste tu contraseña?",
+				"submit": "Iniciar sesión"
+			}
+		}
+	},
+	"sso": {
+		"google": "Iniciar sesión con Google",
+		"meta": "Iniciar sesión con Meta",
+		"or": "o"
+	}
+}

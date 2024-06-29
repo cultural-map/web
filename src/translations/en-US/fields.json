@@ -1,0 +1,10 @@
+{
+	"password": {
+		"hide": {
+			"aria_label": "Hide password"
+		},
+		"show": {
+			"aria_label": "Show password"
+		}
+	}
+}

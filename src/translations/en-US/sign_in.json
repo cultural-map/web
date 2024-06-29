@@ -1,0 +1,27 @@
+{
+	"title": "Cultural Map - Sign in",
+	"form": {
+		"sign_in": {
+			"field": {
+				"email": {
+					"label": "E-mail",
+					"placeholder": "Enter your e-mail"
+				},
+
+				"password": {
+					"label": "Password",
+					"placeholder": "Enter your password"
+				}
+			},
+			"action": {
+				"forgot_password": "Forgot password?",
+				"submit": "Sign in"
+			}
+		}
+	},
+	"sso": {
+		"google": "Sign in with Google",
+		"meta": "Sign in with Meta",
+		"or": "or"
+	}
+}

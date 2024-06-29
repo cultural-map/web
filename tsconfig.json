@@ -27,12 +27,14 @@
 			"_assets/*": ["./src/assets/*"],
 			"_components/*": ["./src/components/*"],
 			"_configurations/*": ["./src/configurations/*"],
-			"_contexts/*": ["./src/contexts/*"],
+			"_hooks/*": ["./src/hooks/*"],
 			"_pages/*": ["./src/pages/*"],
 			"_router/*": ["./src/router/*"],
+			"_storages/*": ["./src/storages/*"],
 			"_styles/*": ["./src/styles/*"],
 			"_translations/*": ["./src/translations/*"],
-			"_types/*": ["./src/types/*"]
+			"_types/*": ["./src/types/*"],
+			"_validations/*": ["./src/validations/*"]
 		}
 	}
 }

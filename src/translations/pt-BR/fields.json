@@ -1,0 +1,10 @@
+{
+	"password": {
+		"hide": {
+			"aria_label": "Esconder senha"
+		},
+		"show": {
+			"aria_label": "Exibir senha"
+		}
+	}
+}

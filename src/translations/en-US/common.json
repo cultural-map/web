@@ -1,0 +1,22 @@
+{
+	"cookies_policy": {
+		"modal": {
+			"action": "Close",
+			"title": "Cookie policy"
+		}
+	},
+	"privacy_policy": {
+		"modal": {
+			"action": "Close",
+			"title": "Privacy policy"
+		}
+	},
+	"rights": "© 2024 Cultural Map. All rights reserved.",
+	"service_policy": {
+		"modal": {
+			"action": "Close",
+			"title": "Service policy"
+		}
+	},
+	"terms": "When continuing, make sure you accept Cultural Map's terms of <servicePolicyModalTrigger>service</servicePolicyModalTrigger>, <privacyPolicyModalTrigger>privacy</privacyPolicyModalTrigger> and <cookiesPolicyModalTrigger>cookies policy</cookiesPolicyModalTrigger>."
+}

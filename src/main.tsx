@@ -6,6 +6,8 @@ import { createRoot } from "react-dom/client";
 import { Toaster } from "react-hot-toast";
 import { I18nextProvider } from "react-i18next";
 import { BrowserRouter } from "react-router-dom";
+import { z } from "zod";
+import { makeZodI18nMap } from "zod-i18n-map";
 
 import { apolloClient } from "_configurations/apollo/client";
 import { axeCoreAccessibilityReport } from "_configurations/axe-core/axeCoreAccessibilityReport";
@@ -19,7 +21,7 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<I18nextProvider i18n={i18next}>
 			<ApolloProvider client={apolloClient}>
-				<NextUIProvider>
+				<NextUIProvider className="w-full h-full">
 					<ThemeProvider attribute="class">
 						<BrowserRouter>
 							<Router />
@@ -40,3 +42,4 @@ createRoot(document.getElementById("root")!).render(
 );
 
 axeCoreAccessibilityReport();
+z.setErrorMap(makeZodI18nMap());

@@ -55,7 +55,11 @@
 	"rules": {
 		"@stylistic/js/semi": ["error", "always"],
 		"@stylistic/js/linebreak-style": ["error", "unix"],
-		"@stylistic/js/indent": ["error", "tab", { "ignoredNodes": ["PropertyDefinition"] }],
+		"@stylistic/js/indent": [
+			"error",
+			"tab",
+			{ "SwitchCase": 1, "ignoredNodes": ["PropertyDefinition", "ConditionalExpression"] }
+		],
 
 		"react/display-name": "off",
 		"react/react-in-jsx-scope": "off",
@@ -77,12 +81,14 @@
 					"_assets/",
 					"_components/",
 					"_configurations/",
-					"_contexts/",
+					"_hooks/",
 					"_pages/",
 					"_router/",
+					"_storages/",
 					"_styles/",
 					"_translations/",
-					"_types/"
+					"_types/",
+					"_validations/"
 				]
 			}
 		],
