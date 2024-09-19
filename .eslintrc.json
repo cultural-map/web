@@ -81,6 +81,7 @@
 					"_assets/",
 					"_components/",
 					"_configurations/",
+					"_constants/",
 					"_hooks/",
 					"_pages/",
 					"_router/",
