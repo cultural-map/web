@@ -5,7 +5,7 @@ import * as NextThemes from "next-themes";
 import * as ReactHotToast from "react-hot-toast";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { ThemeToggle } from "_components/ThemeToggle";
+import { ThemeFloatingActionButton } from "_components/ThemeFloatingActionButton";
 import { AvailableThemes } from "_styles/themes";
 
 const setThemeMock = vi.fn();
@@ -22,10 +22,10 @@ vi.mock("react-hot-toast");
 const toastSpy = vi.spyOn(ReactHotToast, "toast");
 
 const setup = () => {
-	render(<ThemeToggle />);
+	render(<ThemeFloatingActionButton />);
 };
 
-describe("<ThemeToggle />", () => {
+describe("<ThemeFloatingActionButton />", () => {
 	describe("given the toggle button", () => {
 		it("should render the button", () => {
 			setup();
