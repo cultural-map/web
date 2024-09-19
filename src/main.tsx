@@ -9,6 +9,8 @@ import { BrowserRouter } from "react-router-dom";
 import { z } from "zod";
 import { makeZodI18nMap } from "zod-i18n-map";
 
+import { BackToTopFloatingActionButton } from "_components/BackToTopFloatingActionButton";
+import { ThemeFloatingActionButton } from "_components/ThemeFloatingActionButton";
 import { apolloClient } from "_configurations/apollo/client";
 import { axeCoreAccessibilityReport } from "_configurations/axe-core/axeCoreAccessibilityReport";
 import { i18next } from "_configurations/i18n";
@@ -21,14 +23,17 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<I18nextProvider i18n={i18next}>
 			<ApolloProvider client={apolloClient}>
-				<NextUIProvider className="w-full h-full">
+				<NextUIProvider className="size-full" locale={i18next.language}>
 					<ThemeProvider attribute="class">
 						<BrowserRouter>
 							<Router />
 
+							<ThemeFloatingActionButton />
+							<BackToTopFloatingActionButton />
+
 							<Toaster
 								reverseOrder={false}
-								position="bottom-right"
+								position="bottom-left"
 								toastOptions={{
 									className: "bg-gray-800 text-white dark:bg-white dark:text-gray-800",
 								}}

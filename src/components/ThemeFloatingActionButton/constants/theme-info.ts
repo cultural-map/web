@@ -1,9 +1,10 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 import { AvailableThemes } from "_styles/themes/available-themes";
+import { HeroIcon } from "_types/HeroIcon";
 
 export type ThemeInfo = {
-	icon: typeof SunIcon;
+	icon: HeroIcon;
 	translationKeys: {
 		name: string;
 		ariaLabel: string;
