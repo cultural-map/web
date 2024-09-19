@@ -17,7 +17,7 @@ export const SignIn = () => {
 				<title>{t("sign_in.title")}</title>
 			</Helmet>
 
-			<div className="p-2 w-full h-full flex flex-col justify-between items-center">
+			<div className="p-2 size-full flex flex-col justify-between items-center">
 				<div className="h-full flex flex-col gap-4 justify-center items-center">
 					<div className="max-w-sm flex flex-col gap-4">
 						<SignInForm />

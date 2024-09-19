@@ -1,8 +1,11 @@
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
-import { LanguageDropdown } from "_components/LanguageDropdown";
-import { ThemeToggle } from "_components/ThemeToggle";
+import { Header } from "_components/Header";
+
+import { InformationLayer } from "./components/InformationLayer";
+import { MapLayer } from "./components/MapLayer";
+import { ReadMoreLayer } from "./components/ReadMoreLayer";
 
 export const Home = () => {
 	const { t } = useTranslation();
@@ -13,8 +16,12 @@ export const Home = () => {
 				<title>{t("home.title")}</title>
 			</Helmet>
 
-			<ThemeToggle />
-			<LanguageDropdown />
+			<Header />
+
+			<ReadMoreLayer />
+			<MapLayer />
+
+			<InformationLayer />
 		</>
 	);
 };
