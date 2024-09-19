@@ -90,18 +90,27 @@
 		"**/node_modules/**/*": true
 	},
 
+	// Tailwind IntelliSense
+	"tailwindCSS.experimental.classRegex": [
+		// Classix
+		["cx\\(([^)]*)\\)", "(?:'|\"|`)([^'\"`]*)(?:'|\"|`)"]
+	],
+
 	// cSpell
 	"cSpell.language": "en,pt,pt-BR",
 	"cSpell.words": [
 		"chakra",
 		"commitlint",
 		"datetime",
+		"FICBR",
 		"heroicons",
+		"latlng",
 		"linebreak",
 		"lottie",
 		"nextui",
 		"signin",
 		"stryker",
+		"supercluster",
 		"tailwindcss",
 		"webpackchunkname",
 		"zustand"
