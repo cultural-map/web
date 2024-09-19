@@ -19,7 +19,7 @@ export const useLocalStorage = <Value>(key: LocalStorageKeys, defaultValue: Valu
 			} else {
 				return setLocalStorage<Value>(key, defaultValue);
 			}
-		} catch (_) {
+		} catch {
 			return setLocalStorage<Value>(key, defaultValue);
 		}
 	});
