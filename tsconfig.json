@@ -27,6 +27,7 @@
 			"_assets/*": ["./src/assets/*"],
 			"_components/*": ["./src/components/*"],
 			"_configurations/*": ["./src/configurations/*"],
+			"_constants/*": ["./src/constants/*"],
 			"_hooks/*": ["./src/hooks/*"],
 			"_pages/*": ["./src/pages/*"],
 			"_router/*": ["./src/router/*"],
