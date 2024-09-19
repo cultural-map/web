@@ -1,3 +1,31 @@
 {
-	"title": "Cultural Map - Inicio"
+	"title": "Mapa Cultural - Inicio",
+	"information": {
+		"actions": {
+			"subscribe": "Quiero participar del FICBR"
+		},
+		"description": "<bold>El FICBR - Foro Internacional de Cultura Brasileña</bold> es un evento destacado que busca promover y discutir la riqueza y diversidad de la cultura brasileña en un contexto global. La propuesta del FICBR es crear un espacio de intercambio cultural e intelectual, reuniendo a especialistas, artistas, académicos y entusiastas de la cultura brasileña.",
+		"opportunities": {
+			"info": "Durante el foro, los participantes tienen la oportunidad de:",
+			"topics": [
+				"<bold>Asistir a Conferencias y Debates:</bold> Especialistas y profesionales del área cultural discuten temas relevantes, desde el arte y la música hasta la literatura y el patrimonio cultural.",
+				"<bold>Participar en Talleres y Actividades Interactivas:</bold> Actividades prácticas y talleres permiten a los participantes explorar diferentes formas de expresión cultural y creativa.",
+				"<bold>Hacer Networking:</bold> El evento ofrece oportunidades para conectarse con otros apasionados por la cultura brasileña, facilitando la formación de asociaciones y colaboraciones.",
+				"<bold>Explorar Exposiciones y Presentaciones Artísticas:</bold> Espectáculos, exposiciones y performances presentan el talento y la diversidad de la cultura brasileña, destacando tanto tradiciones como innovaciones."
+			]
+		},
+		"title": "¿Qué es el FICBR?",
+		"union": {
+			"title": "¡Una unión de nuestra cultura brasileña!",
+			"description": "El FICBR es un punto de encuentro para todos los que desean profundizar su conocimiento sobre la cultura brasileña, celebrar sus múltiples facetas y promover un diálogo constructivo entre diferentes perspectivas culturales. Es una oportunidad imperdible para quienes valoran la riqueza cultural de Brasil y quieren participar en una conversación global sobre sus contribuciones al escenario internacional."
+		}
+	},
+	"read_more": {
+		"actions": {
+			"subscribe": "Quiero participar de la cultura",
+			"read_more": "Más información sobre el FICBR"
+		},
+		"description": "El FICBR es tu punto de encuentro para explorar y celebrar la diversidad cultural brasileña en un ambiente vibrante e inspirador. Únete a nosotros para una serie de conferencias, talleres y debates con expertos y artistas. Este es el lugar para compartir ideas, hacer conexiones y enamorarte aún más de la cultura brasileña.",
+		"title": ["CULTURA!", "FORMA PARTE DE", "•NUESTRO FORO•"]
+	}
 }

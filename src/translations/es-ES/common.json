@@ -5,6 +5,16 @@
 			"title": "Política de cookies"
 		}
 	},
+	"header": {
+		"tabs": {
+			"cultural_map": "Mapa Cultural",
+			"profile": "Perfil",
+			"project": "El Proyecto"
+		},
+		"actions": {
+			"sign_in": "Iniciar sesión"
+		}
+	},
 	"privacy_policy": {
 		"modal": {
 			"action": "Cerrar",

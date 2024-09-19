@@ -1,0 +1,7 @@
+{
+	"location_permission": {
+		"permission_denied": "Se ha denegado el permiso para acceder a la ubicación",
+		"position_unavailable": "No se pudo obtener su ubicación",
+		"timeout": "La solicitud para obtener su ubicación ha expirado"
+	}
+}
