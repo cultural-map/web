@@ -13,15 +13,21 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 21
+          - 22
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
+          cache: "pnpm"
           always-auth: true
           scope: "@cultural-map"
           node-version: ${{ matrix.node-version }}
@@ -39,13 +45,13 @@ jobs:
         run: npm pkg delete scripts.prepare
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
       - name: Check lint
-        run: yarn lint:check
+        run: pnpm lint:check
 
       - name: Check types
-        run: yarn type:check
+        run: pnpm type:check
 
       - name: Run build
-        run: yarn build
+        run: pnpm build

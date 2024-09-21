@@ -9,7 +9,7 @@ echo -e "\nHello it's ${COLORS[blue]}Husky${COLORS[default]}, one more time! �
 echo -e "Dispatching the ${COLORS[blue]}commit-msg${COLORS[default]} scripts! 🚀\n";
 
 echo -e "${COLORS[blue]}It's time to check the code message! 📄\n${COLORS[default]}";
-yarn --silent commitlint -e -q || (
+pnpm --silent commitlint -e -q || (
     echo -e "\n${COLORS[red]}Your commit message is non-standard! 🚨🚒${COLORS[default]}";
     echo -e "${COLORS[red]}Check the Conventional Commits documentation${COLORS[default]} ${COLORS[green]}'www.conventionalcommits.org'${COLORS[default]} ${COLORS[red]}and try again! \n${COLORS[default]}";
 

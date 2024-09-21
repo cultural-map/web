@@ -9,7 +9,7 @@ echo -e "Hello it's ${COLORS[blue]}Husky${COLORS[default]} again! 🐺";
 echo -e "Dispatching the ${COLORS[blue]}pre-push${COLORS[default]} scripts! 🚀\n";
 
 echo -e "${COLORS[blue]}It's time to check the code types! 💅\n${COLORS[default]}";
-yarn type:check || (
+pnpm type:check || (
     echo -e "${COLORS[red]}Something went wrong with the typing... 🤢🤮${COLORS[default]}";
     echo -e "${COLORS[red]}Check the log and fix the typing problems!${COLORS[default]}";
 
@@ -17,9 +17,9 @@ yarn type:check || (
 )
 
 echo -e "${COLORS[blue]}It's time to check the code lint! 🧹\n${COLORS[default]}";
-yarn lint:check || (
+pnpm lint:check || (
     echo -e "${COLORS[red]}Something went wrong with the linting... 😰😨${COLORS[default]}";
-    echo -e "${COLORS[red]}Check the console and run ${COLORS[green]}'yarn lint:fix'${COLORS[default]} ${COLORS[red]}to try again!${COLORS[default]}";
+    echo -e "${COLORS[red]}Check the console and run ${COLORS[green]}'pnpm lint:fix'${COLORS[default]} ${COLORS[red]}to try again!${COLORS[default]}";
 
     false;
 )
