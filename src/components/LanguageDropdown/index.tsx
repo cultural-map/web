@@ -1,7 +1,6 @@
 import { GLOBALIZATION_PROPERTIES } from "@cultural-map/locations";
 import { ChevronDownIcon, LanguageIcon } from "@heroicons/react/24/solid";
-import { Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/dropdown";
-import { Button, Selection } from "@nextui-org/react";
+import { Button, Selection, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/react";
 import { ReactElement, useCallback, useMemo, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useTranslation } from "react-i18next";

@@ -1,5 +1,4 @@
-import { Image } from "@nextui-org/image";
-import { Button } from "@nextui-org/react";
+import { Button, Image } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 
 import GoogleIcon from "_assets/images/social/google.svg";
