@@ -99,6 +99,7 @@
 	// cSpell
 	"cSpell.language": "en,pt,pt-BR",
 	"cSpell.words": [
+		"barlow",
 		"chakra",
 		"commitlint",
 		"datetime",

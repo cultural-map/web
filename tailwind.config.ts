@@ -10,6 +10,7 @@ const config: Config = {
 	theme: {
 		fontFamily: {
 			barlow: ['"Barlow"', "sans-serif"],
+			"barlow-condensed": ['"Barlow Condensed"', "sans-serif"],
 		},
 	},
 };
