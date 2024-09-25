@@ -1,9 +1,7 @@
-name: Production
+name: Deploy Production
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -60,3 +58,14 @@ jobs:
 
       - name: Run build
         run: pnpm build
+
+      - name: Install Netlify
+        run: pnpm add -g netlify-cli
+
+      - name: Deploy to Netlify
+        run: |
+          netlify deploy \
+            --dir dist \
+            --site ${{ secrets.NETLIFY_SITE_ID }} \
+            --auth ${{ secrets.NETLIFY_API_TOKEN }} \
+            --prod
