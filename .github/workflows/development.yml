@@ -30,6 +30,7 @@ jobs:
           cache: "pnpm"
           always-auth: true
           scope: "@cultural-map"
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com/
 
@@ -37,12 +38,10 @@ jobs:
         uses: DeveloperRic/action-create-env@v1.0.4
         with:
           full_text: |
-            NODE_ENV=development
-        env:
-          API_URL: ${{ secrets.DEV_API_URL }}
+            API_URL=${{ secrets.DEV_API_URL }}
 
       - name: Override "prepare" script
-        run: npm pkg delete scripts.prepare
+        run: pnpm pkg delete scripts.prepare
 
       - name: Install dependencies
         run: pnpm install

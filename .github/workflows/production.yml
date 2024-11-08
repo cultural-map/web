@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  deploy:
-    name: Deploy
+  health-check:
+    name: Health check
     runs-on: ubuntu-latest
 
     strategy:
@@ -30,6 +30,7 @@ jobs:
           cache: "pnpm"
           always-auth: true
           scope: "@cultural-map"
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com/
 
