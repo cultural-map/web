@@ -5,7 +5,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Toaster } from "react-hot-toast";
 import { I18nextProvider } from "react-i18next";
-import { BrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import { z } from "zod";
 import { makeZodI18nMap } from "zod-i18n-map";
 
@@ -15,7 +15,7 @@ import { apolloClient } from "_configurations/apollo/client";
 import { axeCoreAccessibilityReport } from "_configurations/axe-core/axeCoreAccessibilityReport";
 import { i18next } from "_configurations/i18n";
 
-import { Router } from "./router";
+import { router } from "./router";
 
 import "_styles/global/index.css";
 
@@ -25,20 +25,18 @@ createRoot(document.getElementById("root")!).render(
 			<ApolloProvider client={apolloClient}>
 				<NextUIProvider className="size-full" locale={i18next.language}>
 					<ThemeProvider attribute="class">
-						<BrowserRouter>
-							<Router />
+						<RouterProvider router={router} />
 
-							<ThemeFloatingActionButton />
-							<BackToTopFloatingActionButton />
+						<ThemeFloatingActionButton />
+						<BackToTopFloatingActionButton />
 
-							<Toaster
-								reverseOrder={false}
-								position="bottom-left"
-								toastOptions={{
-									className: "bg-gray-800 text-white dark:bg-white dark:text-gray-800",
-								}}
-							/>
-						</BrowserRouter>
+						<Toaster
+							position="top-right"
+							reverseOrder={false}
+							toastOptions={{
+								className: "bg-gray-800 text-white dark:bg-white dark:text-gray-800",
+							}}
+						/>
 					</ThemeProvider>
 				</NextUIProvider>
 			</ApolloProvider>

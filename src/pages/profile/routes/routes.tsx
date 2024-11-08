@@ -1,16 +1,13 @@
-import { lazy, ReactElement } from "react";
-import { Route } from "react-router-dom";
+import { RouteObject } from "react-router-dom";
 
 import { ProfileRoutePaths } from "./paths";
 
-const Profile = lazy(() =>
-	import(/* webpackChunkName: "[page]:profile" */ "_pages/profile").then(({ Profile }) => ({
-		default: Profile,
-	})),
-);
-
-export const ProfileRoutes: ReactElement = (
-	<>
-		<Route path={ProfileRoutePaths.PROFILE} element={<Profile />} />
-	</>
-);
+export const PROFILE_ROUTES: RouteObject[] = [
+	{
+		path: ProfileRoutePaths.PROFILE,
+		lazy: async () => {
+			const { Profile } = await import("_pages/profile");
+			return { Component: Profile };
+		},
+	},
+];

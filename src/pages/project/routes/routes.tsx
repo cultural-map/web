@@ -1,16 +1,13 @@
-import { lazy, ReactElement } from "react";
-import { Route } from "react-router-dom";
+import { RouteObject } from "react-router-dom";
 
 import { ProjectRoutePaths } from "./paths";
 
-const Project = lazy(() =>
-	import(/* webpackChunkName: "[page]:project" */ "_pages/project").then(({ Project }) => ({
-		default: Project,
-	})),
-);
-
-export const ProjectRoutes: ReactElement = (
-	<>
-		<Route path={ProjectRoutePaths.PROJECT} element={<Project />} />
-	</>
-);
+export const PROJECT_ROUTES: RouteObject[] = [
+	{
+		path: ProjectRoutePaths.PROJECT,
+		lazy: async () => {
+			const { Project } = await import("_pages/project");
+			return { Component: Project };
+		},
+	},
+];
