@@ -20,6 +20,15 @@
 			"description": "FICBR is a meeting point for everyone who wants to deepen their knowledge about Brazilian culture, celebrate its multiple facets, and promote a constructive dialogue between different cultural perspectives. It is an unmissable opportunity for those who value the cultural richness of Brazil and want to participate in a global conversation about its contributions to the international scene."
 		}
 	},
+	"last_event": {
+		"highlights": {
+			"lectures": "We had a total of <bold>16 lectures</bold>",
+			"participants": "The event had the participation of <bold>1000 people</bold>",
+			"reach": "We reached the goal of speaking with <bold>8 countries</bold>"
+		},
+		"title": "How was the last FICBR event?",
+		"description": "The event <bold>CULTURAL TRADITION IN MODERNISM</bold> held [insert date and location], was a milestone in promoting and discussing the cultural richness of Brazil. During the forum, we had the privilege of hearing inspiring lectures from renowned experts, who addressed various topics, from the influence of Brazilian music on the global scene to the preservation of cultural traditions in the modern world."
+	},
 	"read_more": {
 		"actions": {
 			"subscribe": "I want to participate in the culture",
@@ -27,5 +36,32 @@
 		},
 		"description": "FICBR is your meeting point to explore and celebrate Brazilian cultural diversity in a vibrant and inspiring environment. Join us for a series of lectures, workshops, and debates with experts and artists. This is the place to share ideas, make connections, and fall even more in love with Brazilian culture.",
 		"title": ["CULTURE!", "BE PART OF", "•OUR FORUM•"]
+	},
+	"supporters": {
+		"title": "WHO IS WITH US"
+	},
+	"questions_and_answers": {
+		"actions": {
+			"subscribe": "I want to participate in FICBR"
+		},
+		"questions": [
+			{
+				"question": "Question 01",
+				"answer": "Answer 01"
+			},
+			{
+				"question": "Question 02",
+				"answer": "Answer 02"
+			},
+			{
+				"question": "Question 03",
+				"answer": "Answer 03"
+			},
+			{
+				"question": "How do I register?",
+				"answer": "To register, you must be 18 years or older (at the time of registration). During the registration process, click on the 'SEE THE REGULATIONS' button, you will be redirected to the regulation summary page, where at the end, by clicking on the acceptance button (confirming that you have read the regulations), you will be redirected to the Registration page."
+			}
+		],
+		"title": "HAVE QUESTIONS?"
 	}
 }

@@ -20,6 +20,15 @@
 			"description": "El FICBR es un punto de encuentro para todos los que desean profundizar su conocimiento sobre la cultura brasileña, celebrar sus múltiples facetas y promover un diálogo constructivo entre diferentes perspectivas culturales. Es una oportunidad imperdible para quienes valoran la riqueza cultural de Brasil y quieren participar en una conversación global sobre sus contribuciones al escenario internacional."
 		}
 	},
+	"last_event": {
+		"highlights": {
+			"lectures": "Tuvimos un total de <bold>16 conferencias</bold>",
+			"participants": "El evento contó con la participación de <bold>1000 personas</bold>",
+			"reach": "Alcanzamos el objetivo de hablar con <bold>8 países</bold>"
+		},
+		"title": "¿Cómo fue el último evento del FICBR?",
+		"description": "El evento <bold>TRADICIÓN CULTURAL EN EL MODERNISMO</bold> realizado [insertar fecha y lugar], fue un hito en la promoción y discusión de la riqueza cultural de Brasil. Durante el foro, tuvimos el privilegio de escuchar conferencias inspiradoras de renombrados especialistas, que abordaron temas diversos, desde la influencia de la música brasileña en el escenario global hasta la preservación de las tradiciones culturales en el mundo moderno."
+	},
 	"read_more": {
 		"actions": {
 			"subscribe": "Quiero participar de la cultura",
@@ -27,5 +36,32 @@
 		},
 		"description": "El FICBR es tu punto de encuentro para explorar y celebrar la diversidad cultural brasileña en un ambiente vibrante e inspirador. Únete a nosotros para una serie de conferencias, talleres y debates con expertos y artistas. Este es el lugar para compartir ideas, hacer conexiones y enamorarte aún más de la cultura brasileña.",
 		"title": ["CULTURA!", "FORMA PARTE DE", "•NUESTRO FORO•"]
+	},
+	"supporters": {
+		"title": "QUIÉN ESTÁ CON NOSOTROS"
+	},
+	"questions_and_answers": {
+		"actions": {
+			"subscribe": "Quiero participar del FICBR"
+		},
+		"questions": [
+			{
+				"question": "Pregunta 01",
+				"answer": "Respuesta 01"
+			},
+			{
+				"question": "Pregunta 02",
+				"answer": "Respuesta 02"
+			},
+			{
+				"question": "Pregunta 03",
+				"answer": "Respuesta 03"
+			},
+			{
+				"question": "¿Cómo me inscribo?",
+				"answer": "Para inscribirte, debes tener 18 años o más (cumplidos al momento de la inscripción). Durante las inscripciones, haz clic en el botón 'VER EL REGLAMENTO', serás redirigido a la página de resumen del reglamento, donde al final, haciendo clic en el botón de aceptación (confirmando que has leído el reglamento), serás redirigido a la página de Inscripciones."
+			}
+		],
+		"title": "¿TIENES DUDAS?"
 	}
 }

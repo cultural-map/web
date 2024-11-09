@@ -20,6 +20,15 @@
 			"description": "O FICBR é um ponto de encontro para todos que desejam aprofundar seu conhecimento sobre a cultura brasileira, celebrar suas múltiplas facetas e promover um diálogo construtivo entre diferentes perspectivas culturais. É uma oportunidade imperdível para quem valoriza a riqueza cultural do Brasil e quer participar de uma conversa global sobre suas contribuições para o cenário internacional."
 		}
 	},
+	"last_event": {
+		"highlights": {
+			"lectures": "Tivemos o total de <bold>16 palestras</bold>",
+			"participants": "O evento contou com a participação de <bold>1000 pessoas</bold>",
+			"reach": "Alcançamos a meta de falar com <bold>8 países</bold>"
+		},
+		"title": "Como foi o último evento do FICBR?",
+		"description": "O evento <bold>TRADIÇÃO CULTURAL NO MODERNISMO</bold> realizado [inserir data e local], foi um marco na promoção e discussão da riqueza cultural do Brasil. Durante o fórum, tivemos o privilégio de ouvir palestras inspiradoras de renomados especialistas, que abordaram temas diversos, desde a influência da música brasileira no cenário global até a preservação das tradições culturais no mundo moderno."
+	},
 	"read_more": {
 		"actions": {
 			"subscribe": "Quero participar da cultura",
@@ -27,5 +36,32 @@
 		},
 		"description": "O FICBR é o seu ponto de encontro para explorar e celebrar a diversidade cultural brasileira em um ambiente vibrante e inspirador. Junte-se a nós para uma série de palestras, workshops e debates com especialistas e artistas Este é o lugar para compartilhar ideias, fazer conexões e se apaixonar ainda mais pela cultura brasileira.",
 		"title": ["CULTURA!", "FAÇA PARTE DO", "•NOSSO FÓRUM•"]
+	},
+	"supporters": {
+		"title": "QUEM ESTÁ COM A GENTE"
+	},
+	"questions_and_answers": {
+		"actions": {
+			"subscribe": "Quero participar do FICBR"
+		},
+		"questions": [
+			{
+				"question": "Dúvida 01",
+				"answer": "Resposta 01"
+			},
+			{
+				"question": "Dúvida 02",
+				"answer": "Resposta 02"
+			},
+			{
+				"question": "Dúvida 03",
+				"answer": "Resposta 03"
+			},
+			{
+				"question": "Como me inscrever?",
+				"answer": "Para se inscrever, basta ter idade igual ou superior a 18 anos (completos no ato da inscrição). Durante as inscrições, clique no botão 'VEJA O REGULAMENTO', você será redirecionado para a página de resumo do regulamento, onde ao final, clicando no botão de aceite (confirmando que leu o regulamento), você será redirecionado para a página de Inscrições."
+			}
+		],
+		"title": "FICOU COM DÚVIDAS?"
 	}
 }

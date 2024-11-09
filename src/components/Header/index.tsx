@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+
 import {
 	Button,
 	Image,
@@ -19,6 +22,7 @@ import LogoMinimal from "_assets/images/logo/minimal.png";
 import { Breakpoints } from "_constants/breakpoints";
 import { useGenerateKeys } from "_hooks/useGenerateKeys";
 import { useWindowSize } from "_hooks/useWindowSize";
+import { HomeRoutePaths } from "_pages/home/routes/paths";
 
 import { ACTIONS } from "./constants/actions";
 import { TABS } from "./constants/tabs";
@@ -45,11 +49,13 @@ export const Header = () => {
 				{width <= Breakpoints.SM && <NavbarMenuToggle />}
 
 				<NavbarBrand className="items-start">
-					{width > Breakpoints.MD ? (
-						<Image className="w-64 h-16" radius="none" src={LogoDefault} />
-					) : (
-						<Image className="size-12" radius="none" src={LogoMinimal} />
-					)}
+					<div className="cursor-pointer" onClick={() => navigate(HomeRoutePaths.DEFAULT)}>
+						{width > Breakpoints.MD ? (
+							<Image className="w-64 h-16" radius="none" src={LogoDefault} />
+						) : (
+							<Image className="size-12" radius="none" src={LogoMinimal} />
+						)}
+					</div>
 				</NavbarBrand>
 			</NavbarContent>
 
