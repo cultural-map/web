@@ -34,6 +34,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com/
 
+      - name: Adding public-hoist-pattern[] config
+        run: pnpm config set public-hoist-pattern[] '*@nextui-org/*, *eslint*, *prettier*'
+
       - name: Create .env file
         uses: DeveloperRic/action-create-env@v1.0.4
         with:
