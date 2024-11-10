@@ -17,17 +17,6 @@ export default defineConfig({
 	build: {
 		rollupOptions: {
 			treeshake: true,
-			output: {
-				manualChunks: (id) => {
-					if (id.includes("/src/pages/")) {
-						const directories = id.split("/");
-						const page = directories.indexOf("pages") + 1;
-
-						const name = directories[page];
-						return `page-${name}`;
-					}
-				},
-			},
 		},
 	},
 });
