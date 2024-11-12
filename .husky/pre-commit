@@ -11,9 +11,9 @@ echo -e "I'm here to help you with your ${COLORS[green]}code${COLORS[default]}! 
 echo -e "Dispatching the ${COLORS[blue]}pre-commit${COLORS[default]} scripts! 🚀\n";
 
 echo -e "${COLORS[blue]}It's time to lint your code! 🧹\n${COLORS[default]}";
-pnpm lint-staged -q || (
+yarn lint-staged -q || (
     echo -e "${COLORS[red]}Something went wrong with the linting... 🤢🤮${COLORS[default]}";
-    echo -e "${COLORS[red]}Check the console and run${COLORS[default]} ${COLORS[green]}'pnpm lint-staged'${COLORS[default]} ${COLORS[red]}to try again!${COLORS[default]}";
+    echo -e "${COLORS[red]}Check the console and run${COLORS[default]} ${COLORS[green]}'yarn lint-staged'${COLORS[default]} ${COLORS[red]}to try again!${COLORS[default]}";
 
     false;
 )

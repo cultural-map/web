@@ -17,15 +17,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install PNPM
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      - name: Install Yarn
+        run: npm install -g yarn
 
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          cache: "pnpm"
+          cache: "yarn"
           always-auth: true
           scope: "@cultural-map"
           token: ${{ secrets.NPM_AUTH_TOKEN }}
@@ -38,7 +36,6 @@ jobs:
           file: ".npmrc"
           content: |
             engine-strict=true
-            public-hoist-pattern[]=*@nextui-org/*, *eslint*, *prettier*
 
             @cultural-map:registry=https://npm.pkg.github.com/
             //npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}
@@ -50,22 +47,22 @@ jobs:
             API_URL=${{ secrets.PROD_API_URL }}
 
       - name: Override "prepare" script
-        run: pnpm pkg delete scripts.prepare
+        run: npm pkg delete scripts.prepare
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Check lint
-        run: pnpm lint:check
+        run: yarn lint:check
 
       - name: Check types
-        run: pnpm type:check
+        run: yarn type:check
 
       - name: Run build
-        run: pnpm build
+        run: yarn build
 
       - name: Install Netlify
-        run: pnpm add -g netlify-cli
+        run: yarn global add netlify-cli
 
       - name: Deploy to Netlify
         run: |
