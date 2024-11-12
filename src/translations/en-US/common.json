@@ -5,6 +5,32 @@
 			"title": "Cookie policy"
 		}
 	},
+	"footer": {
+		"cookies": "Cookies Settings",
+		"shortcuts": [
+			{
+				"title": "Partners"
+			},
+			{
+				"title": "The Project",
+				"topics": [
+					{ "label": "Regulation", "link": "" },
+					{ "label": "Events", "link": "" },
+					{ "label": "Sign Up", "link": "" },
+					{ "label": "Coordinators", "link": "" }
+				]
+			},
+			{
+				"title": "Follow FICBR",
+				"topics": [
+					{ "label": "Instagram", "link": "" },
+					{ "label": "YouTube", "link": "" },
+					{ "label": "TikTok", "link": "" },
+					{ "label": "LinkedIn", "link": "" }
+				]
+			}
+		]
+	},
 	"header": {
 		"tabs": {
 			"cultural_map": "Cultural Map",

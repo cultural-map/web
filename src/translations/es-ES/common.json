@@ -5,6 +5,32 @@
 			"title": "Política de cookies"
 		}
 	},
+	"footer": {
+		"cookies": "Configuración de Cookies",
+		"shortcuts": [
+			{
+				"title": "Socios"
+			},
+			{
+				"title": "El Proyecto",
+				"topics": [
+					{ "label": "Reglamento", "link": "" },
+					{ "label": "Eventos", "link": "" },
+					{ "label": "Inscríbete", "link": "" },
+					{ "label": "Coordinadores", "link": "" }
+				]
+			},
+			{
+				"title": "Sigue a FICBR",
+				"topics": [
+					{ "label": "Instagram", "link": "" },
+					{ "label": "YouTube", "link": "" },
+					{ "label": "TikTok", "link": "" },
+					{ "label": "LinkedIn", "link": "" }
+				]
+			}
+		]
+	},
 	"header": {
 		"tabs": {
 			"cultural_map": "Mapa Cultural",

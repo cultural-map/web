@@ -7,11 +7,18 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
 	plugins: [
-		svgr(),
 		react(),
 		tsconfigPaths(),
 		visualizer({
 			filename: ".reports/bundle/visualization.html",
+		}),
+		svgr({
+			svgrOptions: {
+				plugins: ["@svgr/plugin-svgo", "@svgr/plugin-jsx"],
+				svgoConfig: {
+					floatPrecision: 2,
+				},
+			},
 		}),
 	],
 	build: {

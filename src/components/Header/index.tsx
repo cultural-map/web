@@ -63,7 +63,7 @@ export const Header = () => {
 				{width > Breakpoints.SM &&
 					TABS.map(({ title, link }, index) => (
 						<NavbarItem key={generateKey(index)}>
-							<Button variant="light" onClick={() => navigate(link)}>
+							<Button variant="light" radius="full" onClick={() => navigate(link)}>
 								{t(title)}
 							</Button>
 						</NavbarItem>
@@ -71,7 +71,7 @@ export const Header = () => {
 
 				{ACTIONS.map(({ title, link }, index) => (
 					<NavbarItem key={generateKey(index)}>
-						<Button radius="full" onClick={() => navigate(link)}>
+						<Button color="secondary" radius="full" onClick={() => navigate(link)}>
 							{t(title)}
 						</Button>
 					</NavbarItem>

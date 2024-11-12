@@ -65,6 +65,8 @@
 		"@stryker-mutator/typescript-checker": "^8.6.0",
 		"@stryker-mutator/vitest-runner": "^8.6.0",
 		"@stylistic/eslint-plugin-js": "^2.10.1",
+		"@svgr/plugin-jsx": "^8.1.0",
+		"@svgr/plugin-svgo": "^8.1.0",
 		"@testing-library/dom": "^10.4.0",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/react": "^16.0.1",

@@ -37,7 +37,7 @@ export const ReadMoreLayer = () => {
 			</p>
 
 			<div className="flex flex-wrap justify-center gap-5">
-				<Button radius="full" onClick={handleNavigateToSignInPage}>
+				<Button color="secondary" radius="full" onClick={handleNavigateToSignInPage}>
 					{t("home.read_more.actions.subscribe")}
 				</Button>
 

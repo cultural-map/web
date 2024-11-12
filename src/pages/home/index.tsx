@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
+import { Footer } from "_components/Footer";
 import { Header } from "_components/Header";
 
 import { InformationLayer } from "./components/InformationLayer";
@@ -29,6 +30,8 @@ export const Home = () => {
 
 			<LastEventLayer />
 			<QuestionAndAnswersLayer />
+
+			<Footer />
 		</>
 	);
 };
