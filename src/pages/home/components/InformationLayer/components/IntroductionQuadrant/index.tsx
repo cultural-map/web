@@ -57,7 +57,7 @@ export const IntroductionQuadrant = (): ReactElement => {
 				</div>
 
 				<div className="mt-7">
-					<Button radius="full" onClick={handleNavigateToSignInPage}>
+					<Button radius="full" color="success" onClick={handleNavigateToSignInPage}>
 						{t("home.information.actions.subscribe")}
 					</Button>
 				</div>

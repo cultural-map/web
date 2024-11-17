@@ -12,7 +12,7 @@ export const SupportersLayer = (): ReactElement => {
 	const { width } = useWindowSize();
 
 	return (
-		<div className="flex flex-col mt-24 mb-28">
+		<div className="flex flex-col mt-24 mb-28 text-default-foreground dark:text-white">
 			<p className="font-barlow-condensed font-black text-7xl text-center">{t("home.supporters.title")}</p>
 
 			<div className="flex justify-between h-56 mt-12">

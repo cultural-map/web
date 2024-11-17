@@ -46,7 +46,7 @@ export const Header = () => {
 			onMenuOpenChange={setIsMenuOpen}
 		>
 			<NavbarContent>
-				{width <= Breakpoints.SM && <NavbarMenuToggle />}
+				{width <= Breakpoints.SM && <NavbarMenuToggle className="text-default-foreground dark:text-white" />}
 
 				<NavbarBrand className="items-start">
 					<div className="cursor-pointer" onClick={() => navigate(HomeRoutePaths.DEFAULT)}>
