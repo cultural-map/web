@@ -25,7 +25,7 @@ jobs:
         with:
           cache: "yarn"
           always-auth: true
-          scope: "@cultural-map"
+          scope: "@ficbr"
           token: ${{ secrets.NPM_AUTH_TOKEN }}
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com/
@@ -37,7 +37,7 @@ jobs:
           content: |
             engine-strict=true
 
-            @cultural-map:registry=https://npm.pkg.github.com/
+            @ficbr:registry=https://npm.pkg.github.com/
             //npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Create .env file
